@@ -93,5 +93,5 @@ module.exports = {
     "test/e2e/**/*": "e2e",
     "src/js/router/**/*": "router"
   },
-  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n  ***FOR GULP\n  gulp dev\n  gulp watch\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n  ***FOR GULP\n  gulp dev\n  gulp watch\n\n When in doubt, install gentoo"
 };

@@ -33,8 +33,8 @@ webpack(webpackConfig, function (err, stats) {
   }) + '\n\n')
 
   console.log(chalk.cyan('  Build complete.\n'))
-  console.log(chalk.pink(
-    '.\n' +
-    '  Opening index.html over file:// won\'t work.\n'
+  console.log(chalk.green(
+    ' "Use the Force".\n' +
+    '         --some green guy\n'
   ))
 })
