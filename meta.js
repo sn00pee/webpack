@@ -18,7 +18,7 @@ module.exports = {
       "type": "string",
       "required": false,
       "message": "Project description",
-      "default": "A Vue.js project"
+      "default": "Simple Vuejs project with gulp support (if needed)"
     },
     "author": {
       "type": "string",
@@ -43,6 +43,10 @@ module.exports = {
     "router": {
       "type": "confirm",
       "message": "Install vue-router?"
+    },
+    "gulp": {
+      "type": "confirm",
+      "message": "Install/Use Gulp?"
     },
     "lint": {
       "type": "confirm",
@@ -84,9 +88,10 @@ module.exports = {
     ".eslintignore": "lint",
     "config/test.env.js": "unit || e2e",
     "test/unit/**/*": "unit",
+    "gulpfile-example.js": "gulp",
     "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
+    "src/js/router/**/*": "router"
   },
-  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n  ***FOR GULP\n  gulp dev\n  gulp watch\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

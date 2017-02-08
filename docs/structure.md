@@ -8,10 +8,17 @@
 │   ├── index.js                # main project config
 │   └── ...
 ├── src/
-│   ├── main.js                 # app entry file
-│   ├── App.vue                 # main app component
-│   ├── components/             # ui components
-│   │   └── ...
+│	│
+│	│
+│	└──scss/					# main scss dir
+│	│   ├──lib/
+│	│   ├──partial/
+│	│   ├──variable/
+│	└──js/						#main js dir
+│	│   ├── main.js                 # app entry file
+│	│   ├── App.vue                 # main app component
+│ 	│   ├── components/             # ui components
+│	│   │   └── ...
 │   └── assets/                 # module assets (processed by webpack)
 │       └── ...
 ├── static/                     # pure static assets (directly copied)
@@ -28,7 +35,7 @@
 ├── .babelrc                    # babel config
 ├── .editorconfig               # editor config
 ├── .eslintrc.js                # eslint config
-├── index.html                  # index.html template
+├── gulpfile-example.js         # example gulpfile.js
 └── package.json                # build scripts and dependencies
 ```
 
@@ -57,10 +64,6 @@ Contains unit test related files. See [Unit Testing](unit.md) for more details.
 ### `test/e2e`
 
 Contains e2e test related files. See [End-to-end Testing](e2e.md) for more details.
-
-### `index.html`
-
-This is the **template** `index.html` for our single page application. During development and builds, Webpack will generate assets, and the URLs for those generated assets will be automatically injected into this template to render the final HTML.
 
 ### `package.json`
 
